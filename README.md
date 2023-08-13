@@ -52,4 +52,4 @@ LCD 應該會活躍起來。
 <br>此時，klipper正在運行並且 Mainsail 可以連接到/tmp/printer. 
 <br>您還將有一個日誌檔案/tmp/klippy.log，您可以通過該檔案查看 Klipper 的最新情況。
 
-如果出現問題，此日誌文件會告訴您原因。
+如果出現問題，此日誌檔案會告訴您原因。
