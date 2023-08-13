@@ -33,3 +33,8 @@
 ````
 curl https://raw.githubusercontent.com/BrownRhined/CR-30_klipper/main/config > .config
 ````
+
+這將建立該.config文件，您現在可以運行：
+````
+make
+````
