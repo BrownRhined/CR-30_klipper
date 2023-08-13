@@ -16,12 +16,12 @@
 
 # CR-30 Klipper 韌體
 ## 先決條件
-KlipperWrt 必須安裝到 Creality box上
-或
-Klipper 必須安裝到 Raspberry Pi 上
+<br>KlipperWrt 必須安裝到 Creality box上
+<br>或
+<br>Klipper 必須安裝到 Raspberry Pi 上
 
-建議從 常規 USB 電源為您的 Pi 供電較方便
-建議使用 USB 來控制 主板，只需在 主板 和 Pi 之間連接一條 USB-A 轉 USB-C 電纜即可。
+<br>建議從 常規 USB 電源為您的 Pi 供電較方便
+<br>建議使用 USB 來控制 主板，只需在 主板 和 Pi 之間連接一條 USB-A 轉 USB-C 電纜即可。
 
 ## 構建MCU韌體
 ````
