@@ -60,6 +60,13 @@ LCD 應該會活躍起來。
 ````
 sudo apt install curl make
 ````
+執行 配置編譯韌體環境 腳本
+````
+cd ~
+wget https://raw.githubusercontent.com/BrownRhined/CR-30_klipper/main/install-firmware-compiler.sh
+chmod +x install-firmware-compiler.sh
+./install-firmware-compiler.sh
+````
 
 開始建構MCU韌體
 ````
