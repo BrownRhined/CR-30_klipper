@@ -55,6 +55,7 @@ curl https://raw.githubusercontent.com/BrownRhined/CR-30_klipper/main/config > .
 
 這將建立該.config文件，您現在可以運行：
 ````
+make clean
 make
 ````
 <br>該make命令完成後會建立一個韌體檔案klipper.bin，該檔案存儲在資料夾/klipper/out/klipper.bin。
