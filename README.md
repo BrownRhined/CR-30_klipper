@@ -12,6 +12,19 @@
 
 
 ## 使用方法
+先將創想盒子 Creality box 刷入 KlipperWrt
+<br>到KlipperWrt項目下載最新檔案
+<br>openwrt_snapshot_wb-factory.bin
+<br>重新命名為
+<br>cxsw_update.tar.bz2
+<br>將cxsw_update.tar.bz2 放入SD 卡
+<br>創想盒子 Creality box 重置後 插入電源
+<br>直到紅燈閃爍後插入SD卡
+<br>等待韌體自動刷新
+<br>直到閃綠燈及正常
+<br><br>
+<br>此時通過你的手機或電腦 WiFi 查看 OpenWrt 或 KlipperWrt
+<br>參考KlipperWrt項目 配置網路及安裝Klipper
 
 
 
