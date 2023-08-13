@@ -30,7 +30,7 @@
 
 # 位於CR-30 機器上的 Klipper 韌體
 ## 下載編譯好韌體
-<br>將該檔案複製到 SD 卡並重命名為類似的名稱firmware.bin
+<br>將該檔案複製到 SD 卡並命名為類似的名稱firmware.bin
 <br>將 SD 卡放入 CR-30 的 SD 插槽中，然後將其關閉（等待 5 秒），然後重新打開。
 <br>LCD 螢幕將保持空白，直到klipp PI 上的 python 程序開始加載mcu. 這個是正常的。
 <br><br>
