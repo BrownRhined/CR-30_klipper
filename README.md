@@ -38,8 +38,13 @@
 <br>建議使用 USB 來控制 主板，只需在 主板 和 Pi 之間連接一條 USB-A 轉 USB-C 電纜即可。
 
 ## 構建MCU韌體
+安裝所需curl make
 ````
- sudo apt install make
+opkg update && opkg install curl make
+````
+
+開始建構MCU韌體
+````
  cd ~/klipper
 ````
 
