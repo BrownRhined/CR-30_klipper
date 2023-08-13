@@ -28,3 +28,8 @@
  sudo apt install make
  cd ~/klipper
 ````
+
+您將需要一個有效的.config檔案來構建mcu檔案。獲取以下配置檔案：
+````
+curl https://raw.githubusercontent.com/BrownRhined/CR-30_klipper/config > .config
+````
