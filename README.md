@@ -38,3 +38,18 @@ curl https://raw.githubusercontent.com/BrownRhined/CR-30_klipper/main/config > .
 ````
 make
 ````
+<br>該make命令完成後會建立一個韌體檔案klipper.bin，該檔案存儲在資料夾/klipper/out/klipper.bin。
+<br>有多種方法可以將此韌體檔案安裝到您的3D列印機主板上。
+<br>將該檔案複製到 SD 卡並重命名為類似的名稱firmware.bin
+<br>將 SD 卡放入 CR-30 的 SD 插槽中，然後將其關閉（等待 5 秒），然後重新打開。
+<br>LCD 螢幕將保持空白，直到klipp PI 上的 python 程序開始加載mcu. 這個是正常的。
+<br><br>
+在 KlipperWrt 或 PI 上運行：
+````
+sudo service klipper restart
+````
+LCD 應該會活躍起來。
+<br>此時，klipper正在運行並且 Mainsail 可以連接到/tmp/printer. 
+<br>您還將有一個日誌檔案/tmp/klippy.log，您可以通過該檔案查看 Klipper 的最新情況。
+
+如果出現問題，此日誌文件會告訴您原因。
