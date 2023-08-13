@@ -62,18 +62,24 @@ sudo apt install curl make
 ````
 執行 配置編譯韌體環境 腳本
 ````
-cd ~
+cd ~/klipper
 wget https://raw.githubusercontent.com/BrownRhined/CR-30_klipper/main/install-firmware-compiler.sh
 chmod +x install-firmware-compiler.sh
 ./install-firmware-compiler.sh
 ````
 
+
 開始建構MCU韌體
 ````
- cd ~/klipper
+cd ~/klipper
 make clean
 ````
 
+手動選擇 MCU 並備置文件
+````
+make menuconfig
+````
+或
 您將需要一個有效的.config檔案來構建mcu檔案。獲取以下配置檔案：
 ````
 curl https://raw.githubusercontent.com/BrownRhined/CR-30_klipper/main/config > .config
