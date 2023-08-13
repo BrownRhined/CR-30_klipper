@@ -29,10 +29,28 @@
 
 
 # CR-30 Klipper 韌體
-## 先決條件
+## 下載編譯好韌體
+<br>將該檔案複製到 SD 卡並重命名為類似的名稱firmware.bin
+<br>將 SD 卡放入 CR-30 的 SD 插槽中，然後將其關閉（等待 5 秒），然後重新打開。
+<br>LCD 螢幕將保持空白，直到klipp PI 上的 python 程序開始加載mcu. 這個是正常的。
+<br><br>
+在 KlipperWrt 或 PI 上運行：
+````
+sudo service klipper restart
+````
+LCD 應該會活躍起來。
+<br>此時，klipper正在運行並且 Mainsail 可以連接到/tmp/printer. 
+<br>您還將有一個日誌檔案/tmp/klippy.log，您可以通過該檔案查看 Klipper 的最新情況。
+
+如果出現問題，此日誌檔案會告訴您原因。
+
+
+
+## 自新編譯韌體 先決條件
 <br>KlipperWrt 必須安裝到 Creality box上
 <br>或
 <br>Klipper 必須安裝到 Raspberry Pi 上
+<br>下列教學為在樹莓派Raspberry Pi 上編譯
 
 <br>建議從 常規 USB 電源為您的 Pi 供電較方便
 <br>建議使用 USB 來控制 主板，只需在 主板 和 Pi 之間連接一條 USB-A 轉 USB-C 電纜即可。
@@ -40,12 +58,13 @@
 ## 構建MCU韌體
 安裝所需curl make (下方指令為OpenWrt使用)
 ````
-opkg update && opkg install curl make
+sudo apt install curl make
 ````
 
 開始建構MCU韌體
 ````
  cd ~/klipper
+make clean
 ````
 
 您將需要一個有效的.config檔案來構建mcu檔案。獲取以下配置檔案：
@@ -55,7 +74,6 @@ curl https://raw.githubusercontent.com/BrownRhined/CR-30_klipper/main/config > .
 
 這將建立該.config文件，您現在可以運行：
 ````
-make clean
 make
 ````
 <br>該make命令完成後會建立一個韌體檔案klipper.bin，該檔案存儲在資料夾/klipper/out/klipper.bin。
