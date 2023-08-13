@@ -2,7 +2,7 @@
 ## 說明
 基於創想盒子 Creality box 刷入 KlipperWrt
 <br>KlipperWrt項目網址
-<br>[https://github.com/Hao-Luo/](https://github.com/ihrapsa/KlipperWrt)
+<br>https://github.com/ihrapsa/KlipperWrt
 <br>在開始之前，您應該了解 
 <br>通常情況下，專門用於控制3D印表機的MCU有有限的、預先配置好的引腳來管理主要的列印功能（熱敏電阻、擠出機、步進器...）
 <br>Klippe 將控制板上運行的經典“韌體”分為兩部分。一個是實際在控制板上運行的非常小的mcu韌體，
